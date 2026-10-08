@@ -1,0 +1,3131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Megalatha — UI/UX Designer | Portfolio & Case Studies</title>
+  <meta name="description"
+    content="Portfolio of Megalatha, an aspiring UI/UX Designer with a Software Development background based in Chennai, India. Specializing in Spotify AI Mood Recommendation case study, human-centered design systems, and responsive products.">
+
+  <!-- Favicon -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Kalam:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Syne:wght@700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="editorial-body">
+
+  <!-- Custom Cursor Elements -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       STICKY TOP NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" id="brandLogo">
+        <span class="logo-name">MEGALATHA</span>
+        <span class="sparkle">✦</span>
+        <span class="logo-role">UI/UX</span>
+      </a>
+
+      <!-- Desktop Sticky Nav -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="desktopNavMenu">
+          <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+          <li><a href="#internship" class="nav-link" data-nav="internship">Internship</a></li>
+          <li><a href="#case-study" class="nav-link nav-highlight" data-nav="case-study">Spotify Case Study</a></li>
+          <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+          <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+          <li><a href="#process" class="nav-link" data-nav="process">Process</a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+          <li><a href="#resume" class="nav-link nav-resume-btn" onclick="openResumeModal(event)">Resume</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Toggle -->
+      <div class="nav-actions">
+        <button class="btn-nav-resume" onclick="openResumeModal(event)">
+          Resume ↗
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-backdrop" id="mobileBackdrop" aria-hidden="true"></div>
+  <div class="mobile-drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">MEGALATHA ✦</div>
+      <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#internship" class="mobile-nav-link" onclick="closeMobileMenu()">Internship</a></li>
+      <li><a href="#case-study" class="mobile-nav-link" onclick="closeMobileMenu()">Spotify Case Study ✦</a></li>
+      <li><a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">Projects</a></li>
+      <li><a href="#skills" class="mobile-nav-link" onclick="closeMobileMenu()">Skills</a></li>
+      <li><a href="#process" class="mobile-nav-link" onclick="closeMobileMenu()">Process</a></li>
+      <li><a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a></li>
+      <li><a href="#resume" class="mobile-nav-link" onclick="closeMobileMenu(); openResumeModal(event);">Resume ↗</a>
+      </li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <div class="mobile-contact-pill">
+        <span>📍 Chennai, Tamil Nadu, India</span>
+      </div>
+      <a href="mailto:megalatha@gmail.com" class="btn-primary" style="justify-content: center; width: 100%;">
+        Email Megalatha →
+      </a>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- ==========================================================================
+         SECTION 3: HERO (Recruiter-First Editorial Aesthetic)
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <div class="container hero-layout">
+
+        <!-- Left Column: Editorial Headline & Recruiter Tags -->
+        <div class="hero-text-col reveal-on-scroll">
+
+          <div class="hero-status-pill">
+            <span class="status-pulse-dot"></span>
+            <span>Available for UI/UX & Product Design Roles</span>
+          </div>
+
+          <h1 class="hero-headline">
+            Hi, I’m Megalatha<span class="period-dot">.</span>
+          </h1>
+
+          <p class="hero-subheading">
+            I turn user problems into simple, useful digital experiences.
+          </p>
+
+          <!-- Small Recruiter Tags -->
+          <div class="hero-tags-wrapper">
+            <span class="hero-tag">UI/UX Designer</span>
+            <span class="hero-tag">User Research</span>
+            <span class="hero-tag">Figma</span>
+            <span class="hero-tag">Product Thinking</span>
+            <span class="hero-tag">Software Development</span>
+          </div>
+
+          <!-- Location Info with Map Pin -->
+          <div class="hero-location-row">
+            <svg class="icon-pin" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Chennai, Tamil Nadu, India</span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions-group">
+            <a href="#case-study" class="btn-primary btn-hero" id="heroWorkBtn">
+              View My Work <span class="btn-arrow">↓</span>
+            </a>
+            <button class="btn-secondary btn-hero" onclick="openResumeModal(event)" id="heroResumeBtn">
+              Download Resume <span class="btn-icon">📄</span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Abstract UI/UX Visual Composition (No Person Photos) -->
+        <div class="hero-visual-col reveal-on-scroll delay-1">
+
+          <div class="abstract-hero-canvas" id="abstractHeroCanvas">
+
+            <!-- Glow mesh backdrop -->
+            <div class="hero-mesh-glow" aria-hidden="true"></div>
+
+            <!-- Hand-drawn UX Process Badge: Research -> Design -> Test -> Improve -->
+            <div class="hero-flow-ribbon">
+              <span class="flow-step">Research</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">Design</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">Test</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step flow-active">Improve</span>
+            </div>
+
+            <!-- Figma-Style Frame 01: AI Mood Visualizer -->
+            <div class="figma-fragment-card fragment-spotify">
+              <div class="figma-frame-header">
+                <span class="figma-frame-name"># Spotify-AI-Mood-v2.4</span>
+                <span class="figma-frame-scale">100%</span>
+              </div>
+
+              <div class="fragment-inner-content">
+                <div class="mood-pill-preview">
+                  <span class="mood-spark">✦</span>
+                  <span class="mood-name">Contextual Mood: Deep Focus</span>
+                  <span class="mood-bpm">64 BPM</span>
+                </div>
+
+                <!-- Live Waveform Visualizer -->
+                <div class="mini-waveform">
+                  <div class="wave-bar" style="animation-delay: 0.1s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.3s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.2s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.5s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.15s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.4s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.25s"></div>
+                  <div class="wave-bar" style="animation-delay: 0.45s"></div>
+                </div>
+
+                <div class="fragment-track-row">
+                  <div class="fragment-album-art">🎧</div>
+                  <div class="fragment-track-meta">
+                    <strong>Ambient Coding Flow</strong>
+                    <span>Predicted for evening study</span>
+                  </div>
+                  <div class="fragment-heart">♡</div>
+                </div>
+              </div>
+
+              <!-- Figma Resize Anchors -->
+              <div class="figma-handle handle-tl"></div>
+              <div class="figma-handle handle-tr"></div>
+              <div class="figma-handle handle-bl"></div>
+              <div class="figma-handle handle-br"></div>
+            </div>
+
+            <!-- Figma-Style Frame 02: Wireframe Fragment -->
+            <div class="figma-fragment-card fragment-wireframe">
+              <div class="figma-frame-header">
+                <span class="figma-frame-name"># Wireframe: Quick-Search</span>
+                <span class="figma-wireframe-badge">Lo-Fi</span>
+              </div>
+              <div class="wireframe-skeleton">
+                <div class="skel-searchbar">
+                  <div class="skel-search-icon">🔍</div>
+                  <div class="skel-text-line"></div>
+                </div>
+                <div class="skel-mood-chips">
+                  <span class="skel-chip active">Study</span>
+                  <span class="skel-chip">Chill</span>
+                  <span class="skel-chip">Workout</span>
+                </div>
+                <div class="skel-list">
+                  <div class="skel-item"></div>
+                  <div class="skel-item"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sticky Note Element -->
+            <div class="hero-sticky-note sticky-yellow">
+              <div class="sticky-pin-dot"></div>
+              <div class="sticky-hand-text">
+                "Reduce search friction.<br>
+                Predict mood context<br>
+                before users ask!" 💡
+              </div>
+              <div class="sticky-author">— UX Insight</div>
+            </div>
+
+            <!-- Second Sticky Note (Lavender) -->
+            <div class="hero-sticky-note sticky-lavender">
+              <div class="sticky-hand-text">
+                Figma Components<br>
+                Auto-Layout 5.0 ❖
+              </div>
+            </div>
+
+            <!-- Figma Multiplayer Cursors -->
+            <div class="figma-cursor cursor-megalatha">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#B8A4FF">
+                <path d="M3 2l6.5 18 3.5-6.5L20 10 3 2z" />
+              </svg>
+              <span class="cursor-tag">Megalatha (Designer)</span>
+            </div>
+
+            <div class="figma-cursor cursor-dev">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="#D8F36A">
+                <path d="M3 2l6.5 18 3.5-6.5L20 10 3 2z" />
+              </svg>
+              <span class="cursor-tag">Frontend Engine</span>
+            </div>
+
+            <!-- Hand-drawn UX Arrow SVG -->
+            <svg class="hero-doodle-arrow" viewBox="0 0 70 50" aria-hidden="true">
+              <path d="M 5,12 C 25,5 45,15 62,38 M 52,38 L 62,38 L 62,26" />
+            </svg>
+            <span class="hero-doodle-note">Real UX Process</span>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 1 & 2: ABOUT ME (Short, Editorial, No Portrait Photo)
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+
+        <div class="about-card reveal-on-scroll">
+
+          <div class="about-tag-strip">
+            <span class="about-section-label">✦ 01. ABOUT ME</span>
+            <span class="about-location-chip">📍 Chennai, Tamil Nadu, India</span>
+          </div>
+
+          <div class="about-content-row">
+
+            <div class="about-text-col">
+              <h2 class="about-headline">
+                Designing with Empathy,<br>
+                <span class="highlight-editorial">Thinking in Systems.</span>
+              </h2>
+
+              <!-- Short mandated About text -->
+              <blockquote class="about-quote">
+                “I’m Megalatha, an aspiring UI/UX Designer with a Software Development background. I enjoy turning user
+                problems into simple, thoughtful digital experiences through research, wireframing and visual design.”
+              </blockquote>
+
+              <div class="about-highlights-grid">
+                <div class="about-pill-item">
+                  <div class="pill-dot dot-lavender"></div>
+                  <div>
+                    <strong>B.Voc Software Development</strong>
+                    <p>Foundation in web structures, DOM logic & developer handoff</p>
+                  </div>
+                </div>
+
+                <div class="about-pill-item">
+                  <div class="pill-dot dot-sage"></div>
+                  <div>
+                    <strong>User-Centered Research</strong>
+                    <p>Empathy maps, user journeys, pain-point clustering & wireframes</p>
+                  </div>
+                </div>
+
+                <div class="about-pill-item">
+                  <div class="pill-dot dot-lime"></div>
+                  <div>
+                    <strong>Figma & Prototyping</strong>
+                    <p>Auto-layout components, design tokens & interactive states</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Abstract UI/UX Design Token Composition (No Person Photos) -->
+            <div class="about-visual-card">
+              <div class="token-sheet-wrapper">
+                <div class="token-sheet-header">
+                  <span class="token-title">Megalatha / Design Tokens</span>
+                  <span class="token-badge">CSS + Figma</span>
+                </div>
+
+                <!-- Palette swatch preview -->
+                <div class="swatch-row">
+                  <div class="swatch-bubble" style="background: #F7F3EA;" title="Cream #F7F3EA">
+                    <span>Cream</span>
+                  </div>
+                  <div class="swatch-bubble" style="background: #151B2B; color: #fff;" title="Navy #151B2B">
+                    <span>Navy</span>
+                  </div>
+                  <div class="swatch-bubble" style="background: #B8A4FF;" title="Lavender #B8A4FF">
+                    <span>Lavender</span>
+                  </div>
+                  <div class="swatch-bubble" style="background: #A8C3A0;" title="Sage #A8C3A0">
+                    <span>Sage</span>
+                  </div>
+                  <div class="swatch-bubble" style="background: #D8F36A;" title="Lime #D8F36A">
+                    <span>Lime</span>
+                  </div>
+                </div>
+
+                <!-- Mini UX Flow Sketch Card -->
+                <div class="ux-sketch-box">
+                  <div class="ux-sketch-step">
+                    <span class="sketch-icon">🔍</span>
+                    <span>Research</span>
+                  </div>
+                  <span class="sketch-link">→</span>
+                  <div class="ux-sketch-step">
+                    <span class="sketch-icon">📐</span>
+                    <span>Wireframe</span>
+                  </div>
+                  <span class="sketch-link">→</span>
+                  <div class="ux-sketch-step">
+                    <span class="sketch-icon">✨</span>
+                    <span>UI Design</span>
+                  </div>
+                </div>
+
+                <!-- Small Sticky Note -->
+                <div class="about-sticky-label">
+                  ✦ Product Thinking + Code Awareness
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: INTERNSHIP (Differentiated Editorial Layout)
+         ========================================================================== -->
+    <section class="internship-section" id="internship">
+      <div class="container">
+
+        <div class="section-tag-row reveal-on-scroll">
+          <span class="editorial-tag">✦ 02. PRACTICAL INDUSTRY EXPERIENCE</span>
+          <h2 class="editorial-heading">INTERNSHIP</h2>
+        </div>
+
+        <div class="internship-editorial-card reveal-on-scroll delay-1">
+
+          <!-- Top Row: Role, Company, Location, Duration -->
+          <div class="internship-meta-bar">
+            <div class="role-company-group">
+              <span class="internship-badge">FULL-STACK & UI PRACTICUM</span>
+              <h3 class="internship-role">Full Stack Developer Intern</h3>
+              <div class="company-location">
+                <span class="company-name">🏢 Abservetech Pvt. Ltd., Madurai</span>
+                <span class="duration-pill">🗓 Dec 2025 – Mar 2026</span>
+              </div>
+            </div>
+
+            <div class="skills-used-tags">
+              <span class="skill-tag">Web Application Modules</span>
+              <span class="skill-tag">Agile Teamwork</span>
+              <span class="skill-tag">Problem Solving</span>
+              <span class="skill-tag">Time Management</span>
+            </div>
+          </div>
+
+          <!-- Content Row: Mandated bullet points + Authentic Project Context -->
+          <div class="internship-body-grid">
+
+            <div class="internship-bullets-col">
+              <h4 class="subhead-small">KEY CONTRIBUTIONS & ACHIEVEMENTS</h4>
+
+              <ul class="internship-bullet-list">
+                <li>
+                  <div class="bullet-number">01</div>
+                  <div class="bullet-text">
+                    <strong>Module Delivery Within Strict Deadlines:</strong>
+                    Collaborated with a team to deliver assigned modules within deadlines.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-number">02</div>
+                  <div class="bullet-text">
+                    <strong>Independent Execution & Detail Accuracy:</strong>
+                    Handled tasks independently with consistent attention to detail and accuracy.
+                  </div>
+                </li>
+                <li>
+                  <div class="bullet-number">03</div>
+                  <div class="bullet-text">
+                    <strong>Problem Solving & Agile Time Management:</strong>
+                    Demonstrated strong problem-solving and time-management skills throughout the internship.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Internship Module Card: Authentic Proof of Work -->
+            <div class="internship-preview-col">
+              <div class="module-card">
+                <div class="module-card-header">
+                  <span>Abservetech Practicum Module</span>
+                  <span class="module-status">Completed</span>
+                </div>
+                <div class="module-image-wrap">
+                  <img src="assets/images/WhatsApp Image 2026-03-11 at 11.12.46 AM.jpeg"
+                    alt="Abservetech internship web project dashboard module interface" class="module-thumb"
+                    loading="lazy">
+                  <button class="btn-zoom-artifact"
+                    onclick="openLightboxBySrc('assets/images/WhatsApp Image 2026-03-11 at 11.12.46 AM.jpeg')"
+                    aria-label="Zoom internship screenshot">
+                    🔍 View Full Artifact
+                  </button>
+                </div>
+                <div class="module-card-caption">
+                  <strong>IdeaGalaxy Web Application Module</strong>
+                  <p>Developed assigned dashboard and idea repository components with responsive UI layouts.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6 & 7: MAIN FEATURED PROJECT — SPOTIFY AI MOOD RECOMMENDATION
+         UI/UX CASE STUDY (12 Comprehensive In-Depth Sections)
+         ========================================================================== -->
+    <section class="case-study-hero-section" id="case-study">
+      <div class="container">
+
+        <!-- Case Study Header Banner -->
+        <div class="case-header-card reveal-on-scroll">
+
+          <div class="case-badge-row">
+            <span class="spotify-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+              </svg>
+              INTERNSHIP PROJECT · UI/UX CASE STUDY
+            </span>
+            <span class="flagship-label">MAIN FEATURED PROJECT</span>
+          </div>
+
+          <h2 class="case-main-title">
+            Spotify AI Mood Recommendation
+          </h2>
+
+          <p class="case-main-desc">
+            “An AI-powered music discovery concept designed to reduce the time and effort users spend searching for
+            music that matches their current mood.”
+          </p>
+
+          <!-- Crucial mandate: AI does not detect emotion literally -->
+          <div class="ai-rationale-note">
+            <div class="ai-note-icon">💡</div>
+            <div class="ai-note-text">
+              <strong>Design Definition & Technical Logic:</strong>
+              “The concept predicts a suitable listening mood using listening patterns, activity and behavioural
+              context, then recommends music that fits the moment.”
+            </div>
+          </div>
+
+          <!-- Project Metadata Grid -->
+          <div class="case-meta-grid">
+            <div class="meta-box">
+              <span class="meta-label">ROLE</span>
+              <strong class="meta-value">UI/UX Designer</strong>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">FOCUS</span>
+              <strong class="meta-value">Music Discovery · Personalization · AI Recommendation</strong>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">TOOLS</span>
+              <strong class="meta-value">Figma · Photoshop · Canva</strong>
+            </div>
+          </div>
+
+          <!-- Quick Navigation to 12 Case Study Sections -->
+          <div class="case-toc-strip">
+            <span class="toc-title">CASE STUDY SECTIONS:</span>
+            <a href="#cs-01" class="toc-link">01 Overview</a>
+            <a href="#cs-02" class="toc-link">02 Problem</a>
+            <a href="#cs-03" class="toc-link">03 Research</a>
+            <a href="#cs-04" class="toc-link">04 Competitors</a>
+            <a href="#cs-05" class="toc-link">05 Users</a>
+            <a href="#cs-06" class="toc-link">06 Prioritization</a>
+            <a href="#cs-07" class="toc-link">07 Architecture</a>
+            <a href="#cs-08" class="toc-link">08 User Flow</a>
+            <a href="#cs-09" class="toc-link">09 Wireframes</a>
+            <a href="#cs-10" class="toc-link">10 Final UI</a>
+            <a href="#cs-11" class="toc-link">11 Artifacts</a>
+            <a href="#cs-12" class="toc-link">12 Outcome</a>
+          </div>
+
+        </div>
+
+        <!-- ======================================================================
+             SECTION 01: OVERVIEW
+             ====================================================================== -->
+        <article class="case-block" id="cs-01">
+          <div class="case-block-header">
+            <span class="case-num">01</span>
+            <div>
+              <span class="case-sub">PROJECT CONTEXT</span>
+              <h3 class="case-title">Overview</h3>
+            </div>
+          </div>
+
+          <div class="case-card-grid-2">
+            <div class="case-info-card">
+              <h4 class="card-inner-title">The Premise</h4>
+              <p>
+                Music streaming platforms house over 100 million songs, yet listeners consistently report feeling stuck
+                in repetitive recommendation loops. When users want music to support an immediate context—whether
+                late-night studying, unwinding after work, or a morning run—they are forced to sift through endless
+                curated playlists or type vague search queries that fail to deliver.
+              </p>
+              <p>
+                Spotify AI Mood re-architects music exploration by introducing contextual mood prediction directly into
+                the Spotify interface, balancing intelligent recommendations with complete user control.
+              </p>
+            </div>
+
+            <div class="case-info-card">
+              <h4 class="card-inner-title">Design Scope & Deliverables</h4>
+              <ul class="clean-bullet-list">
+                <li><strong>Empathetic User Research:</strong> Qualitative interviews and pain point synthesis.</li>
+                <li><strong>Competitor Benchmarking:</strong> Analyzing 4 direct platforms and 1 indirect app.</li>
+                <li><strong>Information Architecture & User Flow:</strong> Frictionless branching for new and returning
+                  users.</li>
+                <li><strong>Lo-Fi to Hi-Fi Prototyping:</strong> Hand-drawn wireframes translated into Spotify Dark UI.
+                </li>
+                <li><strong>Design System Tokens:</strong> Cohesive color tokens, typography scales, and accessible
+                  contrast.</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 02: PROBLEM
+             ====================================================================== -->
+        <article class="case-block" id="cs-02">
+          <div class="case-block-header">
+            <span class="case-num">02</span>
+            <div>
+              <span class="case-sub">THE CORE FRICTION</span>
+              <h3 class="case-title">Problem Statement</h3>
+            </div>
+          </div>
+
+          <!-- Mandated Problem Statement -->
+          <div class="problem-statement-banner">
+            <div class="problem-icon">⚠️</div>
+            <div class="problem-text">
+              “Users spend too much time searching for music that matches their current mood, while existing
+              recommendations can sometimes feel repetitive or irrelevant.”
+            </div>
+          </div>
+
+          <!-- Research Pain Points Grid -->
+          <h4 class="subsection-title">Identified Research Pain Points</h4>
+          <div class="pain-points-grid">
+
+            <div class="pain-point-card">
+              <div class="pain-badge">PAIN POINT 01</div>
+              <h4>Repetitive Recommendations</h4>
+              <p>Algorithms repeatedly recommend the same tracks from the user’s past history rather than helping them
+                discover fresh, context-fitting music.</p>
+            </div>
+
+            <div class="pain-point-card">
+              <div class="pain-badge">PAIN POINT 02</div>
+              <h4>Difficult Music Discovery</h4>
+              <p>Discovering new artists or genres that fit a specific mindset requires manual digging through dozens of
+                generic editorial playlists.</p>
+            </div>
+
+            <div class="pain-point-card">
+              <div class="pain-badge">PAIN POINT 03</div>
+              <h4>Home Screen Feels Crowded</h4>
+              <p>The standard Spotify home feed is overloaded with podcasts, audiobooks, and mixed banners, causing
+                visual fatigue and decision paralysis.</p>
+            </div>
+
+            <div class="pain-point-card">
+              <div class="pain-badge">PAIN POINT 04</div>
+              <h4>Finding Playlists Takes Time</h4>
+              <p>Listeners spend 5 to 15 minutes skipping songs and scrolling playlists just to find the right
+                background track for work or relaxation.</p>
+            </div>
+
+            <div class="pain-point-card">
+              <div class="pain-badge">PAIN POINT 05</div>
+              <h4>Search Doesn't Match User Intent</h4>
+              <p>Keywords like "calm coding" or "energized morning" yield static playlists with mixed lyrical songs that
+                frequently disrupt focus.</p>
+            </div>
+
+            <div class="pain-point-card">
+              <div class="pain-badge">PAIN POINT 06</div>
+              <h4>Users Want Better Personalization</h4>
+              <p>Listeners crave recommendations tailored to their actual time of day, activity, and energy levels
+                without complex manual configuration.</p>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 03: RESEARCH
+             ====================================================================== -->
+        <article class="case-block" id="cs-03">
+          <div class="case-block-header">
+            <span class="case-num">03</span>
+            <div>
+              <span class="case-sub">DISCOVERY & EVIDENCE</span>
+              <h3 class="case-title">User Research & Customer Journey</h3>
+            </div>
+          </div>
+
+          <!-- Customer Journey Map -->
+          <div class="journey-map-card">
+            <h4 class="card-inner-title">Customer Journey Map: Traditional vs. AI Mood Flow</h4>
+            <p class="journey-sub">Tracking the user's emotional curve during a typical music listening session.</p>
+
+            <div class="journey-steps-grid">
+
+              <div class="journey-col">
+                <div class="journey-step-num">Stage 1</div>
+                <div class="journey-step-name">Trigger & Launch</div>
+                <div class="journey-box">
+                  <strong>User Action:</strong> Opens Spotify after stressful work or before study session.
+                  <div class="emotion-tag tag-neutral">😐 Neutral (Seeking Focus)</div>
+                  <p class="journey-detail">Needs music immediately without thinking.</p>
+                </div>
+              </div>
+
+              <div class="journey-col">
+                <div class="journey-step-num">Stage 2</div>
+                <div class="journey-step-name">Search & Browse</div>
+                <div class="journey-box">
+                  <strong>User Action:</strong> Scrolls through home feed & searches for "chill study".
+                  <div class="emotion-tag tag-frustrated">😟 Cognitive Overload</div>
+                  <p class="journey-detail">Home screen has too much content; playlists look identical.</p>
+                </div>
+              </div>
+
+              <div class="journey-col">
+                <div class="journey-step-num">Stage 3</div>
+                <div class="journey-step-name">Playback Trial</div>
+                <div class="journey-box">
+                  <strong>User Action:</strong> Plays recommended playlist, skips 4 tracks in a row.
+                  <div class="emotion-tag tag-annoyed">😤 Frustration</div>
+                  <p class="journey-detail">Repeated songs and jarring vocal tracks interrupt flow.</p>
+                </div>
+              </div>
+
+              <div class="journey-col journey-highlight">
+                <div class="journey-step-num">Stage 4 (AI Mood)</div>
+                <div class="journey-step-name">Contextual Selection</div>
+                <div class="journey-box">
+                  <strong>User Action:</strong> Selects "Study / Relax" mood chip in AI Mood tab.
+                  <div class="emotion-tag tag-delighted">✨ Instant Relief</div>
+                  <p class="journey-detail">Instant behavioral matching with tailored BPM & no lyrics.</p>
+                </div>
+              </div>
+
+              <div class="journey-col journey-highlight">
+                <div class="journey-step-num">Stage 5 (Outcome)</div>
+                <div class="journey-step-name">Immersive Flow</div>
+                <div class="journey-box">
+                  <strong>User Action:</strong> Saves dynamic playlist to library and enters deep focus.
+                  <div class="emotion-tag tag-happy">😊 Satisfied Listener</div>
+                  <p class="journey-detail">Zero time wasted on manual searches.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Research Notes & Sticky-Note Synthesis -->
+          <div class="research-notes-row">
+
+            <div class="research-notes-card">
+              <h4 class="card-inner-title">Key Research Notes & Findings</h4>
+              <ul class="clean-bullet-list">
+                <li><strong>Context Trumps Genre:</strong> 85% of participants listen to music based on their immediate
+                  task (coding, commute, winding down) rather than a strict genre (rock, classical).</li>
+                <li><strong>The 3-Skip Threshold:</strong> If the first 3 recommended tracks do not fit the mood, users
+                  close the app or switch to another platform.</li>
+                <li><strong>Time Sensitivity:</strong> Morning hours require low-energy calm or rising tempo, while late
+                  evening requires chill instrumental ambience.</li>
+                <li><strong>User Agency is Crucial:</strong> Users do not want a "black box" algorithm; they want to
+                  easily tweak the mood if the prediction is off.</li>
+              </ul>
+            </div>
+
+            <!-- Sticky Notes Board -->
+            <div class="sticky-synthesis-board">
+              <div class="board-header">RESEARCH STICKY-NOTE CLUSTERS</div>
+
+              <div class="stickers-container">
+                <div class="post-it post-yellow">
+                  <strong>Quote:</strong>
+                  "I spend 10 minutes searching for a playlist, and by then I've lost my study motivation."
+                </div>
+
+                <div class="post-it post-purple">
+                  <strong>Observation:</strong>
+                  Search results prioritize podcast episodes and verified artist singles over mood playlists.
+                </div>
+
+                <div class="post-it post-sage">
+                  <strong>Opportunity:</strong>
+                  Provide 8 intuitive mood archetypes accessible with 1 tap from navigation.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 04: COMPETITORS
+             ====================================================================== -->
+        <article class="case-block" id="cs-04">
+          <div class="case-block-header">
+            <span class="case-num">04</span>
+            <div>
+              <span class="case-sub">MARKET BENCHMARKING</span>
+              <h3 class="case-title">Competitor Research</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            Evaluating 4 direct music streaming competitors and 1 indirect wellness competitor using actual researched
+            friction points.
+          </p>
+
+          <!-- Competitor Comparison Table -->
+          <div class="competitor-table-wrapper">
+            <table class="competitor-table">
+              <thead>
+                <tr>
+                  <th>Platform</th>
+                  <th>Type</th>
+                  <th>Core Researched Problems</th>
+                  <th>Discovery Model</th>
+                  <th>Mood Personalization</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <div class="comp-name-group">
+                      <span class="comp-icon comp-spotify">●</span>
+                      <strong>Spotify</strong>
+                    </div>
+                  </td>
+                  <td><span class="type-pill">Direct</span></td>
+                  <td>
+                    <ul class="table-list">
+                      <li>Same songs in recommendations</li>
+                      <li>Difficult to discover new music</li>
+                      <li>Home screen has too much content</li>
+                      <li>Finding playlists takes time</li>
+                      <li>Search does not always show what users want</li>
+                    </ul>
+                  </td>
+                  <td>Editorial & History-based</td>
+                  <td><span class="score-low">Limited to Genre</span></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="comp-name-group">
+                      <span class="comp-icon comp-apple">🍎</span>
+                      <strong>Apple Music</strong>
+                    </div>
+                  </td>
+                  <td><span class="type-pill">Direct</span></td>
+                  <td>
+                    <ul class="table-list">
+                      <li>Library can be difficult to organize</li>
+                      <li>Recommendations can be improved</li>
+                      <li>Playlist management can be confusing</li>
+                      <li>Interface takes time to learn</li>
+                      <li>Search can be improved</li>
+                    </ul>
+                  </td>
+                  <td>Curated radio & Albums</td>
+                  <td><span class="score-low">Basic Mood Tags</span></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="comp-name-group">
+                      <span class="comp-icon comp-yt">▶</span>
+                      <strong>YouTube Music</strong>
+                    </div>
+                  </td>
+                  <td><span class="type-pill">Direct</span></td>
+                  <td>
+                    <ul class="table-list">
+                      <li>Too many video results</li>
+                      <li>Home feels crowded</li>
+                      <li>Playlist management is difficult</li>
+                      <li>Navigation needs improvement</li>
+                      <li>Repeated recommendations</li>
+                    </ul>
+                  </td>
+                  <td>Video & Audio Hybrid</td>
+                  <td><span class="score-mid">Activity Pills</span></td>
+                </tr>
+
+                <tr>
+                  <td>
+                    <div class="comp-name-group">
+                      <span class="comp-icon comp-amz">📦</span>
+                      <strong>Amazon Music</strong>
+                    </div>
+                  </td>
+                  <td><span class="type-pill">Direct</span></td>
+                  <td>
+                    <ul class="table-list">
+                      <li>New music discovery is difficult</li>
+                      <li>Interface feels old</li>
+                      <li>Search results can be inconsistent</li>
+                      <li>Navigation can be confusing</li>
+                      <li>Recommendations can improve</li>
+                    </ul>
+                  </td>
+                  <td>Catalog Search</td>
+                  <td><span class="score-low">Minimal</span></td>
+                </tr>
+
+                <tr class="indirect-row">
+                  <td>
+                    <div class="comp-name-group">
+                      <span class="comp-icon comp-calm">🧘</span>
+                      <strong>Calm</strong>
+                    </div>
+                  </td>
+                  <td><span class="type-pill indirect-pill">Indirect</span></td>
+                  <td>
+                    <ul class="table-list">
+                      <li>Limited personalization</li>
+                      <li>Finding the right session takes time</li>
+                      <li>More personalization needed</li>
+                      <li>Content organization can improve</li>
+                      <li>Search can improve</li>
+                    </ul>
+                  </td>
+                  <td>Soundscapes & Meditation</td>
+                  <td><span class="score-mid">State of Mind Selection</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Competitive Edge Callout -->
+          <div class="competitive-edge-box">
+            <div class="edge-title">THE OPPORTUNITY GAP:</div>
+            <p>
+              While streaming apps focus on catalog size and Calm focuses on guided relaxation, no platform combines
+              <strong>instant behavioral context prediction</strong> with <strong>mainstream music catalog
+                discovery</strong>. Spotify AI Mood bridges this exact gap.
+            </p>
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 05: USERS (Personas: Priya & Rahul - Abstract Avatars Only)
+             ====================================================================== -->
+        <article class="case-block" id="cs-05">
+          <div class="case-block-header">
+            <span class="case-num">05</span>
+            <div>
+              <span class="case-sub">TARGET AUDIENCE</span>
+              <h3 class="case-title">User Personas</h3>
+            </div>
+          </div>
+
+          <div class="personas-grid">
+
+            <!-- Persona 01: Priya -->
+            <div class="persona-card">
+              <div class="persona-top">
+                <!-- Abstract Vector Avatar (NO Real People) -->
+                <div class="abstract-avatar avatar-priya">
+                  <div class="avatar-shapes">
+                    <span class="shape-circle"></span>
+                    <span class="shape-triangle"></span>
+                    <span class="avatar-emoji">🎓</span>
+                  </div>
+                </div>
+
+                <div class="persona-identity">
+                  <span class="persona-archetype">THE MULTI-TASKING STUDENT</span>
+                  <h4 class="persona-name">Priya</h4>
+                  <div class="persona-demographics">
+                    <span>Age: 21</span> •
+                    <span>Location: Chennai</span> •
+                    <span>College Student</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="persona-bio">
+                <p>Uses Spotify while studying and travelling. Spends too much time searching for songs and wants AI
+                  mood-based recommendations to maintain focus during long college study sessions.</p>
+              </div>
+
+              <div class="persona-details-grid">
+                <div class="persona-subbox">
+                  <span class="box-tag">GOALS</span>
+                  <ul>
+                    <li>Find songs quickly</li>
+                    <li>Discover new music</li>
+                    <li>Get accurate recommendations</li>
+                  </ul>
+                </div>
+
+                <div class="persona-subbox">
+                  <span class="box-tag">MOTIVATION</span>
+                  <ul>
+                    <li>Save time during study sprints</li>
+                    <li>Personalized music experience</li>
+                    <li>Mood-based recommendations</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="persona-quote">
+                “I need playlists that help me study without forcing me to spend 15 minutes searching first.”
+              </div>
+            </div>
+
+            <!-- Persona 02: Rahul -->
+            <div class="persona-card">
+              <div class="persona-top">
+                <!-- Abstract Vector Avatar (NO Real People) -->
+                <div class="abstract-avatar avatar-rahul">
+                  <div class="avatar-shapes">
+                    <span class="shape-rect"></span>
+                    <span class="shape-diamond"></span>
+                    <span class="avatar-emoji">💻</span>
+                  </div>
+                </div>
+
+                <div class="persona-identity">
+                  <span class="persona-archetype">THE DEEP-WORK ENGINEER</span>
+                  <h4 class="persona-name">Rahul</h4>
+                  <div class="persona-demographics">
+                    <span>Age: 25</span> •
+                    <span>Location: Bangalore</span> •
+                    <span>Software Engineer</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="persona-bio">
+                <p>Uses Spotify while working. Repeated recommendations distract him during deep programming sprints.
+                  Wants curated focus playlists and better discovery without repetitive tracks.</p>
+              </div>
+
+              <div class="persona-details-grid">
+                <div class="persona-subbox">
+                  <span class="box-tag">GOALS</span>
+                  <ul>
+                    <li>Find focus playlists</li>
+                    <li>Discover new songs</li>
+                    <li>Reduce search time</li>
+                  </ul>
+                </div>
+
+                <div class="persona-subbox">
+                  <span class="box-tag">MOTIVATION</span>
+                  <ul>
+                    <li>Better focus during sprints</li>
+                    <li>Smart recommendations</li>
+                    <li>Time saving</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="persona-quote">
+                “When I'm coding, repeated pop songs pull me out of the zone. I want contextual music immediately.”
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 06: FEATURE PRIORITIZATION MATRIX
+             ====================================================================== -->
+        <article class="case-block" id="cs-06">
+          <div class="case-block-header">
+            <span class="case-num">06</span>
+            <div>
+              <span class="case-sub">PRODUCT STRATEGY</span>
+              <h3 class="case-title">Feature Prioritization Matrix (2×2)</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            Evaluating potential features across <strong>Impact</strong> and <strong>Urgency</strong> to define the
+            Minimum Lovable Product (MLP) for Spotify AI Mood.
+          </p>
+
+          <!-- 2x2 Matrix Container -->
+          <div class="matrix-container">
+
+            <div class="matrix-axis-y">
+              <span>HIGH IMPACT ↑</span>
+              <span>LOW IMPACT ↓</span>
+            </div>
+
+            <div class="matrix-grid-2x2">
+
+              <!-- Quadrant 1: High Impact + High Urgency (Must Build First) -->
+              <div class="matrix-quadrant quad-high-high">
+                <div class="quad-header">
+                  <span class="quad-tag">PRIORITY 1: BUILD FIRST</span>
+                  <h4>High Impact + High Urgency</h4>
+                </div>
+                <ul class="quad-list">
+                  <li>
+                    <span class="check-icon">✓</span>
+                    <strong>AI Mood Prediction:</strong> Contextual behavioral matching engine.
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span>
+                    <strong>Smart Song Recommendation:</strong> Real-time discovery feed.
+                  </li>
+                  <li>
+                    <span class="check-icon">✓</span>
+                    <strong>Accurate Voice Search:</strong> Natural language intent recognition.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Quadrant 2: High Impact + Low Urgency (Strategic Roadmap) -->
+              <div class="matrix-quadrant quad-high-low">
+                <div class="quad-header">
+                  <span class="quad-tag">PRIORITY 2: STRATEGIC</span>
+                  <h4>High Impact + Low Urgency</h4>
+                </div>
+                <ul class="quad-list">
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Personalized Playlist:</strong> Auto-updating dynamic collections.
+                  </li>
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Activity-Based Recommendation:</strong> Workout, study & commute presets.
+                  </li>
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Favorite Songs:</strong> Mood-tagged favorite bookmarks.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Quadrant 3: Low Impact + High Urgency (Quick Wins) -->
+              <div class="matrix-quadrant quad-low-high">
+                <div class="quad-header">
+                  <span class="quad-tag">PRIORITY 3: QUICK WINS</span>
+                  <h4>Low Impact + High Urgency</h4>
+                </div>
+                <ul class="quad-list">
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Improved Search Filter:</strong> Mood, tempo & BPM search chips.
+                  </li>
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Listening History:</strong> Recently played mood timelines.
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Quadrant 4: Low Impact + Low Urgency (Future Polish) -->
+              <div class="matrix-quadrant quad-low-low">
+                <div class="quad-header">
+                  <span class="quad-tag">PRIORITY 4: FUTURE EXPANSION</span>
+                  <h4>Low Impact + Low Urgency</h4>
+                </div>
+                <ul class="quad-list">
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Dark/Light Theme:</strong> Adaptive system appearance.
+                  </li>
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Social Sharing:</strong> Share mood playlist snapshots to Instagram.
+                  </li>
+                  <li>
+                    <span class="bullet-dot">•</span>
+                    <strong>Profile Customization:</strong> Custom mood aesthetic avatars.
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="matrix-axis-x">
+              <span>← LOW URGENCY</span>
+              <span>HIGH URGENCY →</span>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 07: INFORMATION ARCHITECTURE
+             ====================================================================== -->
+        <article class="case-block" id="cs-07">
+          <div class="case-block-header">
+            <span class="case-num">07</span>
+            <div>
+              <span class="case-sub">SYSTEM STRUCTURE</span>
+              <h3 class="case-title">Information Architecture</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            Polished, intuitive structural hierarchy integrating AI Mood directly into Spotify’s native navigation
+            mental model.
+          </p>
+
+          <!-- Interactive IA Diagram Tree -->
+          <div class="ia-tree-wrapper">
+
+            <!-- Root -->
+            <div class="ia-root-box">
+              <span class="ia-root-badge">APP ROOT</span>
+              <strong>Spotify AI</strong>
+              <div class="ia-root-subs">Login • Signup • Home • Profile</div>
+            </div>
+
+            <div class="ia-connector-line"></div>
+
+            <!-- Primary Branches -->
+            <div class="ia-branches-row">
+
+              <!-- Branch 1: Home -->
+              <div class="ia-branch-card">
+                <div class="ia-branch-title">🏠 Home</div>
+                <ul class="ia-node-list">
+                  <li>Search</li>
+                  <li class="ia-highlight">AI Mood</li>
+                  <li>Library</li>
+                  <li>Notifications</li>
+                  <li>Settings</li>
+                </ul>
+              </div>
+
+              <!-- Branch 2: Search -->
+              <div class="ia-branch-card">
+                <div class="ia-branch-title">🔍 Search</div>
+                <ul class="ia-node-list">
+                  <li>Songs</li>
+                  <li>Albums</li>
+                  <li>Artists</li>
+                </ul>
+              </div>
+
+              <!-- Branch 3: AI Mood (Featured Core) -->
+              <div class="ia-branch-card ia-branch-featured">
+                <div class="ia-branch-title">✦ AI Mood (Core Engine)</div>
+                <div class="ia-sub-clusters">
+                  <div class="mood-chips-cluster">
+                    <span class="ia-chip chip-happy">Happy</span>
+                    <span class="ia-chip chip-sad">Sad</span>
+                    <span class="ia-chip chip-angry">Angry</span>
+                    <span class="ia-chip chip-relax">Relax</span>
+                    <span class="ia-chip chip-party">Party</span>
+                    <span class="ia-chip chip-workout">Workout</span>
+                    <span class="ia-chip chip-study">Study</span>
+                  </div>
+                  <div class="ia-flow-sequence">
+                    <span>↳ Recommended Songs</span>
+                    <span>↳ Song Details</span>
+                    <span>↳ Music Player</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Branch 4: Library -->
+              <div class="ia-branch-card">
+                <div class="ia-branch-title">📚 Library</div>
+                <ul class="ia-node-list">
+                  <li>Liked Songs</li>
+                  <li>Playlists</li>
+                  <li>Downloads</li>
+                  <li>History</li>
+                </ul>
+              </div>
+
+              <!-- Branch 5: Profile -->
+              <div class="ia-branch-card">
+                <div class="ia-branch-title">👤 Profile</div>
+                <ul class="ia-node-list">
+                  <li>Edit Profile</li>
+                  <li>Settings</li>
+                  <li>Logout</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <!-- Persistent Player Architecture -->
+            <div class="ia-player-footer-box">
+              <div class="player-arch-header">
+                <strong>🎵 Music Player (Persistent Playback Architecture)</strong>
+              </div>
+              <div class="player-controls-row">
+                <span class="ctrl-pill">Play</span>
+                <span class="ctrl-pill">Pause</span>
+                <span class="ctrl-pill">Next</span>
+                <span class="ctrl-pill">Previous</span>
+                <span class="ctrl-pill">Like</span>
+                <span class="ctrl-pill">Share</span>
+                <span class="ctrl-pill">Add to Playlist</span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 08: USER FLOW
+             ====================================================================== -->
+        <article class="case-block" id="cs-08">
+          <div class="case-block-header">
+            <span class="case-num">08</span>
+            <div>
+              <span class="case-sub">EXPERIENCE PATHWAYS</span>
+              <h3 class="case-title">User Flow Diagram</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            Mapping the critical pathway from app launch to playback and library curation with branching authentication.
+          </p>
+
+          <!-- Visual User Flowchart -->
+          <div class="user-flow-diagram">
+
+            <!-- Flow Step 1: Start -->
+            <div class="flow-stage">
+              <div class="flow-node node-start">
+                <span class="node-tag">START</span>
+                <strong>Open Spotify AI Mood</strong>
+              </div>
+              <div class="flow-arrow-down">↓</div>
+              <div class="flow-node">
+                <strong>Splash Screen</strong>
+              </div>
+              <div class="flow-arrow-down">↓</div>
+              <div class="flow-node">
+                <strong>Welcome Screen</strong>
+              </div>
+              <div class="flow-arrow-down">↓</div>
+              <div class="flow-decision">
+                <span>Already have account?</span>
+              </div>
+            </div>
+
+            <!-- Branching: YES vs NO -->
+            <div class="flow-branches-grid">
+
+              <!-- Left: YES (Login) -->
+              <div class="flow-branch-box branch-yes">
+                <span class="branch-label">YES (Existing User)</span>
+                <div class="branch-steps">
+                  <div class="flow-node-sm">Login Screen</div>
+                  <div class="arrow-sub">↓</div>
+                  <div class="flow-node-sm">Enter Email + Password</div>
+                  <div class="arrow-sub">↓</div>
+                  <div class="flow-node-sm node-success">Login Successful</div>
+                </div>
+              </div>
+
+              <!-- Right: NO (Signup) -->
+              <div class="flow-branch-box branch-no">
+                <span class="branch-label">NO (New User)</span>
+                <div class="branch-steps">
+                  <div class="flow-node-sm">Create Account</div>
+                  <div class="arrow-sub">↓</div>
+                  <div class="flow-node-sm">Enter Name & Email</div>
+                  <div class="arrow-sub">↓</div>
+                  <div class="flow-node-sm">Create Password & Confirm</div>
+                  <div class="arrow-sub">↓</div>
+                  <div class="flow-node-sm node-success">Signup Successful</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flow-converge-arrow">
+              <span>Both paths lead to</span> ↓
+            </div>
+
+            <!-- Main App Experience Flow -->
+            <div class="flow-main-hub">
+              <div class="flow-node node-hub">
+                <span class="node-tag">MAIN APP HUB</span>
+                <strong>Home Screen (Navigation: Search / AI Mood / Library / Profile)</strong>
+              </div>
+
+              <div class="flow-arrow-down">↓ User Taps "AI Mood"</div>
+
+              <div class="flow-node node-core">
+                <span class="node-tag">CORE INTERACTION</span>
+                <strong>Select Mood</strong>
+                <span class="mood-list-note">(Happy • Sad • Angry • Relax • Party • Workout • Study)</span>
+              </div>
+
+              <div class="flow-arrow-down">↓ AI Synthesizes Matching Soundscape</div>
+
+              <div class="flow-node">
+                <strong>Recommended Songs Feed</strong>
+              </div>
+
+              <div class="flow-arrow-down">↓ User Selects Track</div>
+
+              <div class="flow-node">
+                <strong>Song Details & Context Cards</strong>
+              </div>
+
+              <div class="flow-arrow-down">↓ Tap Play</div>
+
+              <div class="flow-node node-player">
+                <span class="node-tag">PLAYBACK STATE</span>
+                <strong>Music Player Screen</strong>
+                <div class="player-actions-capsule">
+                  Play / Pause • Next • Previous • Like • Share • Add to Playlist
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 09: WIREFRAMES
+             ====================================================================== -->
+        <article class="case-block" id="cs-09">
+          <div class="case-block-header">
+            <span class="case-num">09</span>
+            <div>
+              <span class="case-sub">LOW-FIDELITY EXPLORATION</span>
+              <h3 class="case-title">Wireframes</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            Low-fidelity architectural layouts emphasizing screen hierarchy, thumb-reach zones, and seamless mood
+            transitions.
+          </p>
+
+          <div class="wireframes-grid">
+
+            <!-- Wireframe 1: Home -->
+            <div class="wireframe-card">
+              <div class="wireframe-mockup-frame">
+                <div class="wireframe-status-bar">
+                  <span>9:41</span>
+                  <span>●●● 100%</span>
+                </div>
+                <div class="wireframe-inner">
+                  <div class="wf-header-row">
+                    <div class="wf-avatar-box"></div>
+                    <div class="wf-search-box">Search songs, artists...</div>
+                  </div>
+
+                  <div class="wf-hero-banner">
+                    <div class="wf-line-lg"></div>
+                    <div class="wf-line-sm"></div>
+                    <div class="wf-pill-btn">AI Mood Quick Start</div>
+                  </div>
+
+                  <div class="wf-section-label">Recently Played</div>
+                  <div class="wf-cards-row">
+                    <div class="wf-square-card"></div>
+                    <div class="wf-square-card"></div>
+                    <div class="wf-square-card"></div>
+                  </div>
+
+                  <div class="wf-section-label">Your Mood Mixes</div>
+                  <div class="wf-list-item"></div>
+                  <div class="wf-list-item"></div>
+                </div>
+
+                <div class="wireframe-bottom-bar">
+                  <span class="wf-nav-item active">Home</span>
+                  <span class="wf-nav-item">Search</span>
+                  <span class="wf-nav-item wf-nav-ai">✦ Mood</span>
+                  <span class="wf-nav-item">Library</span>
+                </div>
+              </div>
+
+              <div class="wireframe-caption">
+                <h4>01. Home Screen Wireframe</h4>
+                <p>Prioritizes immediate access to the AI Mood Quick Start banner above the fold while maintaining
+                  familiar recently played cards.</p>
+              </div>
+            </div>
+
+            <!-- Wireframe 2: Search -->
+            <div class="wireframe-card">
+              <div class="wireframe-mockup-frame">
+                <div class="wireframe-status-bar">
+                  <span>9:41</span>
+                  <span>●●● 100%</span>
+                </div>
+                <div class="wireframe-inner">
+                  <div class="wf-header-row">
+                    <div class="wf-full-search">
+                      <span>🔍</span> Focus, Coding, Evening Chill...
+                    </div>
+                  </div>
+
+                  <div class="wf-section-label">Filter by Behavioral Context</div>
+                  <div class="wf-mood-chips-grid">
+                    <div class="wf-chip-item">Study</div>
+                    <div class="wf-chip-item">Work</div>
+                    <div class="wf-chip-item">Commute</div>
+                    <div class="wf-chip-item">Late Night</div>
+                  </div>
+
+                  <div class="wf-section-label">Search Results (Songs, Albums, Artists)</div>
+                  <div class="wf-result-row">
+                    <div class="wf-thumb"></div>
+                    <div class="wf-result-meta">
+                      <div class="wf-line-md"></div>
+                      <div class="wf-line-xs"></div>
+                    </div>
+                  </div>
+                  <div class="wf-result-row">
+                    <div class="wf-thumb"></div>
+                    <div class="wf-result-meta">
+                      <div class="wf-line-md"></div>
+                      <div class="wf-line-xs"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wireframe-bottom-bar">
+                  <span class="wf-nav-item">Home</span>
+                  <span class="wf-nav-item active">Search</span>
+                  <span class="wf-nav-item wf-nav-ai">✦ Mood</span>
+                  <span class="wf-nav-item">Library</span>
+                </div>
+              </div>
+
+              <div class="wireframe-caption">
+                <h4>02. Search Screen Wireframe</h4>
+                <p>Introduces contextual activity filters above standard text search results, helping users pinpoint
+                  songs by mindset rather than title.</p>
+              </div>
+            </div>
+
+            <!-- Wireframe 3: AI Mood Selection -->
+            <div class="wireframe-card">
+              <div class="wireframe-mockup-frame">
+                <div class="wireframe-status-bar">
+                  <span>9:41</span>
+                  <span>●●● 100%</span>
+                </div>
+                <div class="wireframe-inner">
+                  <div class="wf-ai-header">
+                    <div class="wf-line-lg" style="width: 70%;"></div>
+                    <div class="wf-line-xs" style="width: 90%;"></div>
+                  </div>
+
+                  <!-- Central Interactive Mood Wheel / Orb Placeholder -->
+                  <div class="wf-mood-wheel-box">
+                    <div class="wf-wheel-circle">
+                      <span>Select Mood</span>
+                    </div>
+                  </div>
+
+                  <div class="wf-mood-pills-row">
+                    <span class="wf-pill active">Happy</span>
+                    <span class="wf-pill">Relax</span>
+                    <span class="wf-pill">Workout</span>
+                    <span class="wf-pill">Study</span>
+                  </div>
+
+                  <div class="wf-play-cta">
+                    Generate Mood Soundscape ➔
+                  </div>
+                </div>
+
+                <div class="wireframe-bottom-bar">
+                  <span class="wf-nav-item">Home</span>
+                  <span class="wf-nav-item">Search</span>
+                  <span class="wf-nav-item wf-nav-ai active">✦ Mood</span>
+                  <span class="wf-nav-item">Library</span>
+                </div>
+              </div>
+
+              <div class="wireframe-caption">
+                <h4>03. AI Mood Selection Wireframe</h4>
+                <p>Dedicated mood exploration workspace featuring tactile preset chips and the central interactive mood
+                  selector for zero-effort listening.</p>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ======================================================================
+             SECTION 10: FINAL UI (Interactive 9-Screen Spotify Dark UI Showcase)
+             ====================================================================== -->
+        <article class="case-block" id="cs-10">
+          <div class="case-block-header">
+            <span class="case-num">10</span>
+            <div>
+              <span class="case-sub">HIGH-FIDELITY POLISH</span>
+              <h3 class="case-title">Final UI Showcase</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            Crafted strictly adhering to Spotify’s dark mode design system (#121212 background, #FFFFFF primary text,
+            #B3B3B3 secondary text, #242424 cards) with tailored mood accents.
+          </p>
+
+          <!-- Design System Color Tokens Spec -->
+          <div class="spotify-tokens-strip">
+            <div class="spec-group">
+              <span class="spec-label">SURFACE:</span>
+              <div class="spec-chip" style="background: #121212; border: 1px solid #333;">#121212 Background</div>
+              <div class="spec-chip" style="background: #242424;">#242424 Cards</div>
+            </div>
+
+            <div class="spec-group">
+              <span class="spec-label">MOOD ACCENTS:</span>
+              <div class="spec-chip" style="background: #FACC15; color: #000;">Happy #FACC15</div>
+              <div class="spec-chip" style="background: #60A5FA; color: #000;">Relax #60A5FA</div>
+              <div class="spec-chip" style="background: #818CF8; color: #000;">Sad #818CF8</div>
+              <div class="spec-chip" style="background: #F97316; color: #000;">Workout #F97316</div>
+            </div>
+
+            <div class="spec-group">
+              <span class="spec-label">MUSIC ACCENTS:</span>
+              <div class="spec-chip" style="background: #A855F7; color: #fff;">Purple #A855F7</div>
+              <div class="spec-chip" style="background: #3B82F6; color: #fff;">Blue #3B82F6</div>
+              <div class="spec-chip" style="background: #F59E0B; color: #000;">Orange #F59E0B</div>
+              <div class="spec-chip" style="background: #22C55E; color: #000;">Green #22C55E</div>
+            </div>
+          </div>
+
+          <!-- Interactive 9-Screen Tab Switcher -->
+          <div class="screen-tabs-nav">
+            <button class="screen-tab-btn active" onclick="switchFinalScreen('screen-home', this)">1. Home</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-search', this)">2. Search</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-mood-select', this)">3. AI Mood
+              Selection</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-mood-results', this)">4. AI Mood
+              Results</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-recommended', this)">5. Recommended
+              Songs</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-smart-playlist', this)">6. AI Smart
+              Playlist</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-now-playing', this)">7. Now
+              Playing</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-library', this)">8. Library</button>
+            <button class="screen-tab-btn" onclick="switchFinalScreen('screen-settings', this)">9. Profile / AI
+              Settings</button>
+          </div>
+
+          <!-- Screen Showcase Container -->
+          <div class="screen-viewer-box" id="screenViewerBox">
+
+            <!-- Screen 1: Home -->
+            <div class="final-screen-view active" id="screen-home">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+
+                  <div class="phone-content-body spotify-dark-theme">
+                    <!-- Top Bar -->
+                    <div class="sp-top-bar">
+                      <div class="sp-greeting">
+                        <span>Good evening, Priya</span>
+                        <h3>Music for your mood</h3>
+                      </div>
+                      <div class="sp-icons">
+                        <span>🔔</span>
+                        <span>⚙️</span>
+                      </div>
+                    </div>
+
+                    <!-- AI Mood Hero Callout -->
+                    <div class="sp-ai-hero-card">
+                      <div class="sp-hero-badge">AI MOOD ENGINE ACTIVE</div>
+                      <h4>Predicted Mood: Late Night Study</h4>
+                      <p>Based on your 11:30 PM listening patterns • 68 BPM Binaural</p>
+                      <button class="sp-btn-tune"
+                        onclick="switchFinalScreen('screen-mood-select', document.querySelectorAll('.screen-tab-btn')[2])">
+                        Fine-Tune Mood ✦
+                      </button>
+                    </div>
+
+                    <!-- 2x2 Quick Play Grid -->
+                    <div class="sp-quick-grid">
+                      <div class="sp-quick-card">
+                        <div class="sp-quick-art art-purple">🟣</div>
+                        <span>Deep Focus Mix</span>
+                      </div>
+                      <div class="sp-quick-card">
+                        <div class="sp-quick-art art-blue">🔵</div>
+                        <span>Rainy Lofi Beats</span>
+                      </div>
+                      <div class="sp-quick-card">
+                        <div class="sp-quick-art art-green">🟢</div>
+                        <span>Acoustic Morning</span>
+                      </div>
+                      <div class="sp-quick-card">
+                        <div class="sp-quick-art art-orange">🟠</div>
+                        <span>Creative Surge</span>
+                      </div>
+                    </div>
+
+                    <div class="sp-section-heading">Curated for Your Mood</div>
+                    <div class="sp-h-scroll">
+                      <div class="sp-album-card">
+                        <div class="sp-album-img img-happy">🟡</div>
+                        <strong>Euphoric Lift</strong>
+                        <span>Instrumental energy</span>
+                      </div>
+                      <div class="sp-album-card">
+                        <div class="sp-album-img img-relax">🔵</div>
+                        <strong>Deep Breath</strong>
+                        <span>Ambient waves</span>
+                      </div>
+                      <div class="sp-album-card">
+                        <div class="sp-album-img img-workout">🟠</div>
+                        <strong>Cardio Pace</strong>
+                        <span>128 BPM pulse</span>
+                      </div>
+                    </div>
+
+                    <!-- Mini Bottom Player -->
+                    <div class="sp-mini-player">
+                      <div class="sp-mini-art">🎵</div>
+                      <div class="sp-mini-meta">
+                        <strong>Nebula Waves // Focus</strong>
+                        <span>Spotify AI Mood Synthesizer</span>
+                      </div>
+                      <div class="sp-mini-controls">
+                        <span>♡</span>
+                        <span class="sp-mini-play">▶</span>
+                      </div>
+                    </div>
+
+                    <!-- Bottom Navigation -->
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item active">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab">✦<br>AI Mood</div>
+                      <div class="nav-item">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 01 OF 09</span>
+                  <h4>Spotify Home Redesign</h4>
+                  <p>Seamlessly embeds the contextual AI Mood card right at the top of the feed without disrupting
+                    standard playlist access.</p>
+                  <ul class="anno-list">
+                    <li>Dynamic contextual greeting reflecting time of day</li>
+                    <li>One-tap access to launch mood synthesizer</li>
+                    <li>Direct access to mood-sorted albums</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 2: Search -->
+            <div class="final-screen-view" id="screen-search">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-search-header">
+                      <h3>Search</h3>
+                      <div class="sp-search-input-box">
+                        <span>🔍</span>
+                        <input type="text" value="chill study binaural" readonly class="sp-dummy-input">
+                        <span class="sp-mic-icon">🎙️</span>
+                      </div>
+                    </div>
+
+                    <div class="sp-section-heading">Browse by Mood & Mindset</div>
+                    <div class="sp-mood-tiles-grid">
+                      <div class="sp-tile tile-study">
+                        <span>Study</span>
+                        <div class="tile-icon">📚</div>
+                      </div>
+                      <div class="sp-tile tile-relax">
+                        <span>Relax</span>
+                        <div class="tile-icon">🌊</div>
+                      </div>
+                      <div class="sp-tile tile-workout">
+                        <span>Workout</span>
+                        <div class="tile-icon">⚡</div>
+                      </div>
+                      <div class="sp-tile tile-party">
+                        <span>Party</span>
+                        <div class="tile-icon">🎉</div>
+                      </div>
+                      <div class="sp-tile tile-happy">
+                        <span>Happy</span>
+                        <div class="tile-icon">☀️</div>
+                      </div>
+                      <div class="sp-tile tile-sad">
+                        <span>Sad</span>
+                        <div class="tile-icon">🌧️</div>
+                      </div>
+                    </div>
+
+                    <div class="sp-section-heading">Top Matched Tracks</div>
+                    <div class="sp-track-item">
+                      <span class="track-num">1</span>
+                      <div class="track-thumb thumb-purple">🎧</div>
+                      <div class="track-details">
+                        <strong>Midnight Synapses</strong>
+                        <span>Lofi Beats • Zero Lyrics</span>
+                      </div>
+                      <span class="track-dur">3:42</span>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item active">🔍<br>Search</div>
+                      <div class="nav-item ai-tab">✦<br>AI Mood</div>
+                      <div class="nav-item">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 02 OF 09</span>
+                  <h4>Contextual Search</h4>
+                  <p>Transforms traditional text-only search into an intuitive mood exploration hub with voice-search
+                    support.</p>
+                  <ul class="anno-list">
+                    <li>Mood and mindset category tiles</li>
+                    <li>Voice intent recognition for instant moods</li>
+                    <li>Results filtered by lyrics presence and BPM</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 3: AI Mood Selection -->
+            <div class="final-screen-view" id="screen-mood-select">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-ai-selection-header">
+                      <div class="back-btn">←</div>
+                      <h3>AI Mood Selector</h3>
+                      <div class="spark-btn">✦</div>
+                    </div>
+
+                    <p class="sp-screen-instruction">
+                      How are you feeling right now? Tap a mood to predict suitable soundscapes.
+                    </p>
+
+                    <!-- Interactive Glowing Mood Orb in UI -->
+                    <div class="sp-mood-orb-center">
+                      <div class="sp-glow-ring"></div>
+                      <div class="sp-orb-core">
+                        <span class="sp-current-mood-text">RELAX</span>
+                        <span class="sp-current-sub">62 BPM • Calm Focus</span>
+                      </div>
+                    </div>
+
+                    <!-- Mood Chips Selection -->
+                    <div class="sp-mood-chips-row">
+                      <button class="sp-chip-btn chip-happy">Happy</button>
+                      <button class="sp-chip-btn chip-relax active-chip">Relax</button>
+                      <button class="sp-chip-btn chip-study">Study</button>
+                      <button class="sp-chip-btn chip-workout">Workout</button>
+                      <button class="sp-chip-btn chip-party">Party</button>
+                      <button class="sp-chip-btn chip-sad">Sad</button>
+                      <button class="sp-chip-btn chip-angry">Angry</button>
+                    </div>
+
+                    <div class="sp-generate-box">
+                      <button class="sp-btn-generate"
+                        onclick="switchFinalScreen('screen-mood-results', document.querySelectorAll('.screen-tab-btn')[3])">
+                        Generate Mood Playlist ➔
+                      </button>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab active">✦<br>AI Mood</div>
+                      <div class="nav-item">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 03 OF 09</span>
+                  <h4>AI Mood Selection Wheel</h4>
+                  <p>The core interactive focal point of the feature, providing tactile feedback across 7 distinct
+                    emotional contexts.</p>
+                  <ul class="anno-list">
+                    <li>Dynamic chromatic orb that shifts color in real time</li>
+                    <li>Happy (#FACC15), Relax (#60A5FA), Sad (#818CF8), Workout (#F97316)</li>
+                    <li>One-tap generation of customized audio streams</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 4: AI Mood Results -->
+            <div class="final-screen-view" id="screen-mood-results">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-results-hero">
+                      <div class="sp-results-badge">GENERATED FOR YOU</div>
+                      <h2>Relaxation & Evening Flow</h2>
+                      <div class="sp-results-stats">
+                        <span>✦ 98% Match</span> •
+                        <span>32 Tracks</span> •
+                        <span>1 hr 45 min</span>
+                      </div>
+                      <div class="sp-hero-play-row">
+                        <button class="sp-play-circle-btn">▶</button>
+                        <button class="sp-action-circle">♡</button>
+                        <button class="sp-action-circle">⋯</button>
+                      </div>
+                    </div>
+
+                    <div class="sp-track-list-dense">
+                      <div class="sp-track-row active-playing">
+                        <div class="track-indicator">▶</div>
+                        <div class="track-text">
+                          <strong>Weightless Oscillations</strong>
+                          <span>Marconi Resonance</span>
+                        </div>
+                        <span class="sp-tag-pill">60 BPM</span>
+                      </div>
+
+                      <div class="sp-track-row">
+                        <div class="track-indicator">2</div>
+                        <div class="track-text">
+                          <strong>Solar Drift</strong>
+                          <span>Kiasmos • Ambient Chill</span>
+                        </div>
+                        <span class="sp-tag-pill">65 BPM</span>
+                      </div>
+
+                      <div class="sp-track-row">
+                        <div class="track-indicator">3</div>
+                        <div class="track-text">
+                          <strong>Midnight Piano Solitude</strong>
+                          <span>Ólafur Arnalds</span>
+                        </div>
+                        <span class="sp-tag-pill">58 BPM</span>
+                      </div>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab active">✦<br>AI Mood</div>
+                      <div class="nav-item">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 04 OF 09</span>
+                  <h4>AI Mood Results Feed</h4>
+                  <p>Instantly provides a tailored tracklist with transparent contextual tags (tempo, BPM, match score).
+                  </p>
+                  <ul class="anno-list">
+                    <li>Transparent match indicators without cognitive confusion</li>
+                    <li>Contextual tags (BPM, lyric presence)</li>
+                    <li>Single tap to play full dynamic stream</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 5: Recommended Songs -->
+            <div class="final-screen-view" id="screen-recommended">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-nav-header-row">
+                      <h3>Recommended Songs</h3>
+                      <span>Filter ⚙️</span>
+                    </div>
+
+                    <div class="sp-filter-chips">
+                      <span class="filter-chip active">All Moods</span>
+                      <span class="filter-chip">Instrumental Only</span>
+                      <span class="filter-chip">High Energy</span>
+                    </div>
+
+                    <div class="sp-cards-vertical">
+                      <div class="sp-rec-card">
+                        <div class="sp-rec-thumb art-purple">🎵</div>
+                        <div class="sp-rec-info">
+                          <strong>Resonance Horizon</strong>
+                          <span>Predicted for deep focus work</span>
+                          <div class="sp-match-bar">
+                            <div class="fill" style="width: 94%;"></div>
+                          </div>
+                        </div>
+                        <div class="sp-rec-action">+</div>
+                      </div>
+
+                      <div class="sp-rec-card">
+                        <div class="sp-rec-thumb art-blue">🎹</div>
+                        <div class="sp-rec-info">
+                          <strong>Equinox Ambient</strong>
+                          <span>Slow acoustic tempo for sleep</span>
+                          <div class="sp-match-bar">
+                            <div class="fill" style="width: 88%;"></div>
+                          </div>
+                        </div>
+                        <div class="sp-rec-action">+</div>
+                      </div>
+
+                      <div class="sp-rec-card">
+                        <div class="sp-rec-thumb art-lime">⚡</div>
+                        <div class="sp-rec-info">
+                          <strong>Pulse Vector 130</strong>
+                          <span>Fast BPM cardio pace</span>
+                          <div class="sp-match-bar">
+                            <div class="fill" style="width: 91%;"></div>
+                          </div>
+                        </div>
+                        <div class="sp-rec-action">+</div>
+                      </div>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab active">✦<br>AI Mood</div>
+                      <div class="nav-item">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 05 OF 09</span>
+                  <h4>Recommended Songs Feed</h4>
+                  <p>Surfaces songs based on active behavioral prediction with quick-add actions and clear explanation
+                    bars.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 6: AI Smart Playlist -->
+            <div class="final-screen-view" id="screen-smart-playlist">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-playlist-cover-row">
+                      <div class="sp-dynamic-artwork">
+                        <div class="art-gradient-orb"></div>
+                        <span>✦ SMART AI MIX</span>
+                      </div>
+                      <div class="sp-playlist-meta">
+                        <span class="sub-label">AUTO-ADAPTING PLAYLIST</span>
+                        <h3>Priya's Study Aura</h3>
+                        <p>Refreshes every evening at 8:00 PM</p>
+                      </div>
+                    </div>
+
+                    <div class="sp-playlist-actions">
+                      <button class="btn-sp-green">Download</button>
+                      <button class="btn-sp-outline">Add to Library</button>
+                      <button class="btn-sp-icon">⋯</button>
+                    </div>
+
+                    <div class="sp-smart-insights-box">
+                      <div class="insight-icon">💡</div>
+                      <p>This smart playlist automatically swaps tracks when your activity shifts from active browsing
+                        to passive listening.</p>
+                    </div>
+
+                    <div class="sp-track-item">
+                      <span class="track-num">1</span>
+                      <div class="track-thumb thumb-green">✨</div>
+                      <div class="track-details">
+                        <strong>Clair de Lune (Synthesized)</strong>
+                        <span>Debussy Reimagined</span>
+                      </div>
+                      <span class="track-dur">4:12</span>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab">✦<br>AI Mood</div>
+                      <div class="nav-item active">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 06 OF 09</span>
+                  <h4>AI Smart Dynamic Playlist</h4>
+                  <p>Playlists that adapt based on the time of day, skipping historical dead ends.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 7: Now Playing -->
+            <div class="final-screen-view" id="screen-now-playing">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme now-playing-bg">
+                    <!-- Top header -->
+                    <div class="np-header">
+                      <span>⌄</span>
+                      <div class="np-title-group">
+                        <span class="np-sub">PLAYING FROM AI MOOD</span>
+                        <strong>Relaxation & Evening Flow</strong>
+                      </div>
+                      <span>⋯</span>
+                    </div>
+
+                    <!-- Album Art with Realtime Mood Aura -->
+                    <div class="np-art-wrapper">
+                      <div class="np-art-core">
+                        <div class="np-soundwave-bars">
+                          <span></span><span></span><span></span><span></span><span></span>
+                        </div>
+                      </div>
+                      <div class="np-mood-badge">✦ Mood: Relax (62 BPM)</div>
+                    </div>
+
+                    <!-- Track Details -->
+                    <div class="np-track-row">
+                      <div>
+                        <h3>Weightless Oscillations</h3>
+                        <p>Marconi Resonance • Instrumental</p>
+                      </div>
+                      <div class="np-heart active-heart">💚</div>
+                    </div>
+
+                    <!-- Scrubber Bar -->
+                    <div class="np-scrubber-box">
+                      <div class="np-progress-bar">
+                        <div class="np-fill" style="width: 45%;"></div>
+                        <div class="np-knob"></div>
+                      </div>
+                      <div class="np-time-row">
+                        <span>1:42</span>
+                        <span>-2:33</span>
+                      </div>
+                    </div>
+
+                    <!-- Full Music Player Controls -->
+                    <div class="np-controls-row">
+                      <button class="ctrl-icon" aria-label="Shuffle">🔀</button>
+                      <button class="ctrl-icon" aria-label="Previous">⏮</button>
+                      <button class="ctrl-play-pause" aria-label="Play or Pause">⏸</button>
+                      <button class="ctrl-icon" aria-label="Next">⏭</button>
+                      <button class="ctrl-icon" aria-label="Repeat">🔁</button>
+                    </div>
+
+                    <!-- Bottom Action Row -->
+                    <div class="np-footer-actions">
+                      <span>📱 Device Available</span>
+                      <span>🔗 Share Mood Mix</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 07 OF 09</span>
+                  <h4>Now Playing & Mood Visualizer</h4>
+                  <p>Full-screen playback screen equipped with tactile scrubber, audio waveform bars, and quick
+                    mood-sharing controls.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 8: Library -->
+            <div class="final-screen-view" id="screen-library">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-nav-header-row">
+                      <div class="user-avatar-small">M</div>
+                      <h3>Your Library</h3>
+                      <span>🔍</span>
+                    </div>
+
+                    <div class="sp-filter-chips">
+                      <span class="filter-chip active">Playlists</span>
+                      <span class="filter-chip">AI Mood Mixes</span>
+                      <span class="filter-chip">Downloads</span>
+                    </div>
+
+                    <div class="sp-library-list">
+                      <div class="sp-lib-row">
+                        <div class="lib-icon icon-purple">✦</div>
+                        <div class="lib-info">
+                          <strong>AI Mood Mixes</strong>
+                          <span>7 Auto-updating collections</span>
+                        </div>
+                      </div>
+
+                      <div class="sp-lib-row">
+                        <div class="lib-icon icon-green">♡</div>
+                        <div class="lib-info">
+                          <strong>Liked Songs</strong>
+                          <span>342 tracks</span>
+                        </div>
+                      </div>
+
+                      <div class="sp-lib-row">
+                        <div class="lib-icon icon-blue">📂</div>
+                        <div class="lib-info">
+                          <strong>College Coding Sprints</strong>
+                          <span>Created by Priya</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab">✦<br>AI Mood</div>
+                      <div class="nav-item active">📚<br>Library</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 08 OF 09</span>
+                  <h4>Organized Library</h4>
+                  <p>Neatly categorizes AI mood collections alongside permanent playlists, resolving Apple Music's
+                    organization friction.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 9: Profile / AI Settings -->
+            <div class="final-screen-view" id="screen-settings">
+              <div class="phone-mockup-wrapper">
+                <div class="phone-device-shell">
+                  <div class="phone-notch"></div>
+                  <div class="phone-content-body spotify-dark-theme">
+                    <div class="sp-nav-header-row">
+                      <div class="back-btn">←</div>
+                      <h3>AI Recommendation Settings</h3>
+                      <div></div>
+                    </div>
+
+                    <div class="settings-group-box">
+                      <span class="group-title">BEHAVIORAL CONTEXT PERMISSIONS</span>
+
+                      <div class="setting-toggle-row">
+                        <div>
+                          <strong>Time-of-Day Adaptation</strong>
+                          <p>Suggest study music in evening, wake-up music in morning</p>
+                        </div>
+                        <input type="checkbox" checked class="sp-switch" aria-label="Toggle time of day adaptation">
+                      </div>
+
+                      <div class="setting-toggle-row">
+                        <div>
+                          <strong>Lyric-Free Focus Filter</strong>
+                          <p>Automatically suppress lyrical tracks during Study & Work modes</p>
+                        </div>
+                        <input type="checkbox" checked class="sp-switch" aria-label="Toggle lyric free focus filter">
+                      </div>
+
+                      <div class="setting-toggle-row">
+                        <div>
+                          <strong>BPM Sensitivity Control</strong>
+                          <p>Match audio tempo strictly to activity pace</p>
+                        </div>
+                        <input type="checkbox" checked class="sp-switch" aria-label="Toggle BPM sensitivity control">
+                      </div>
+                    </div>
+
+                    <div class="settings-group-box">
+                      <span class="group-title">PRIVACY & ALGORITHM RESET</span>
+                      <button class="btn-settings-outline">Clear AI Listening Pattern History</button>
+                    </div>
+
+                    <div class="sp-bottom-nav">
+                      <div class="nav-item">🏠<br>Home</div>
+                      <div class="nav-item">🔍<br>Search</div>
+                      <div class="nav-item ai-tab">✦<br>AI Mood</div>
+                      <div class="nav-item active">👤<br>Profile</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="screen-annotations">
+                  <span class="anno-tag">SCREEN 09 OF 09</span>
+                  <h4>Profile & AI Personalization Settings</h4>
+                  <p>Gives users granular privacy and algorithmic transparency, letting them configure exactly how mood
+                    prediction operates.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- ======================================================================
+             SECTION 11: RESEARCH & DESIGN ARTIFACTS (Mandatory Real Process Work)
+             ====================================================================== -->
+        <article class="case-block" id="cs-11">
+          <div class="case-block-header">
+            <span class="case-num">11</span>
+            <div>
+              <span class="case-sub">AUTHENTIC PROOF OF PROCESS</span>
+              <h3 class="case-title">Research & Design Artifacts</h3>
+            </div>
+          </div>
+
+          <p class="case-intro-para">
+            “Real process work from my internship project.” These authentic uploaded artifacts demonstrate hands-on
+            software development, UI architecture, documentation, and user research.
+          </p>
+
+          <!-- Masonry / Grid Gallery of Actual Project Artifacts -->
+          <div class="artifacts-grid">
+
+            <!-- Artifact 1: Login Authentication Module -->
+            <div class="artifact-card" onclick="openLightbox(0)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/WhatsApp Image 2026-03-11 at 10.54.18 AM.jpeg"
+                  alt="Authentic React app login and user authentication interface from internship practicum"
+                  class="artifact-img" loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">INTERNSHIP FRONTEND</span>
+                <h4 class="artifact-title">React App User Authentication & Login Flow</h4>
+                <p class="artifact-desc">Localhost module development verifying form validation and state-handling
+                  during practicum.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 2: IdeaGalaxy Dashboard -->
+            <div class="artifact-card" onclick="openLightbox(1)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/WhatsApp Image 2026-03-11 at 11.12.46 AM.jpeg"
+                  alt="IdeaGalaxy innovation platform dashboard interface with hero banner and submitted concept cards"
+                  class="artifact-img" loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">WEB APPLICATION</span>
+                <h4 class="artifact-title">IdeaGalaxy Dashboard & Discovery Feed</h4>
+                <p class="artifact-desc">Responsive web layout designed for student creators to submit, explore, and
+                  filter innovation ideas.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 3: User Profile & Saved Ideas -->
+            <div class="artifact-card" onclick="openLightbox(2)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/WhatsApp Image 2026-03-11 at 11.12.47 AM.jpeg"
+                  alt="User profile interface displaying saved innovation concepts, approval status badges, and categories"
+                  class="artifact-img" loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">USER EXPERIENCE</span>
+                <h4 class="artifact-title">Student Profile & Saved Concept Cards</h4>
+                <p class="artifact-desc">Card-based interface showing project status badges (Approved, Pending) and
+                  category taxonomies.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 4: Peer Discussion & Comments -->
+            <div class="artifact-card" onclick="openLightbox(3)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/WhatsApp Image 2026-03-11 at 8.20.18 PM.jpeg"
+                  alt="Collaborative discussion feed showing comments, peer reviews, and Megalatha's active contributions"
+                  class="artifact-img" loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">COLLABORATION</span>
+                <h4 class="artifact-title">Collaborative Peer Feedback & Discussion Feed</h4>
+                <p class="artifact-desc">Real-time interaction thread with team members (Poorani, Dharani, Megalatha)
+                  validating concept usability.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 5: Manage Ideas Admin Workflow -->
+            <div class="artifact-card" onclick="openLightbox(4)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/WhatsApp Image 2026-03-11 at 8.20.21 PM.jpeg"
+                  alt="Administrative concept management interface showing approval states and categorization"
+                  class="artifact-img" loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">ADMIN WORKFLOW</span>
+                <h4 class="artifact-title">Concept Moderation & Filter Management</h4>
+                <p class="artifact-desc">Admin dashboard featuring state filtering (All, Pending, Approved, Rejected)
+                  and meta tags.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 6: Word Technical Documentation -->
+            <div class="artifact-card" onclick="openLightbox(5)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/Screenshot 2026-03-12 130145.png"
+                  alt="Software architecture and UI user experience technical documentation report in Microsoft Word"
+                  class="artifact-img" loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">UX DOCUMENTATION</span>
+                <h4 class="artifact-title">Technical Architecture & UI Training Specification</h4>
+                <p class="artifact-desc">Comprehensive project report detailing React state architecture, navigation
+                  flows, and user onboarding manuals.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 7: Spotify AI Case Study Mockup -->
+            <div class="artifact-card" onclick="openLightbox(6)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/spotify_ai_case_study.jpg"
+                  alt="Spotify AI Mood multi-device high fidelity user interface presentation" class="artifact-img"
+                  loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">SPOTIFY CASE STUDY</span>
+                <h4 class="artifact-title">Spotify AI Mood Multi-Device System</h4>
+                <p class="artifact-desc">Presentation mockup showing tablet and mobile mood exploration interface across
+                  Spotify Dark theme.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 8: Mobile Discovery Mockup -->
+            <div class="artifact-card" onclick="openLightbox(7)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/spotify_ai_mockup.jpg"
+                  alt="Spotify AI Mood mobile phone mockups and responsive interfaces" class="artifact-img"
+                  loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">VISUAL DESIGN</span>
+                <h4 class="artifact-title">Mobile Discovery & Mood Orb Visualizer</h4>
+                <p class="artifact-desc">High-fidelity interface screens demonstrating user flow from mood wheel
+                  selection to audio playback.</p>
+              </div>
+            </div>
+
+            <!-- Artifact 9: Modular Design System Hierarchy -->
+            <div class="artifact-card" onclick="openLightbox(8)">
+              <div class="artifact-img-wrap">
+                <img src="assets/images/internship_ui_design_system.jpg"
+                  alt="Design system component hierarchy, design tokens, and wireframe flows" class="artifact-img"
+                  loading="lazy">
+                <div class="artifact-hover-overlay">
+                  <span>Click to view full artifact ↗</span>
+                </div>
+              </div>
+              <div class="artifact-footer">
+                <span class="artifact-tag">DESIGN SYSTEMS</span>
+                <h4 class="artifact-title">Component Hierarchy & Design Token Architecture</h4>
+                <p class="artifact-desc">Figma components tree, color tokens, and atomic wireframes proving end-to-end
+                  design thinking.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- ======================================================================
+             SECTION 12: OUTCOME (No Fake Numbers / Exact User Formulation)
+             ====================================================================== -->
+        <article class="case-block" id="cs-12">
+          <div class="case-block-header">
+            <span class="case-num">12</span>
+            <div>
+              <span class="case-sub">PROJECT SUMMARY</span>
+              <h3 class="case-title">Outcome</h3>
+            </div>
+          </div>
+
+          <!-- Mandated Outcome Statement -->
+          <div class="outcome-quote-box">
+            <div class="quote-symbol">“</div>
+            <p class="outcome-quote-text">
+              The redesigned concept focuses on reducing music discovery effort by combining mood-based recommendations,
+              personalization and a clearer discovery flow.
+            </p>
+          </div>
+
+          <!-- 3 Mandated Outcome Cards -->
+          <div class="outcome-cards-grid">
+
+            <div class="outcome-card">
+              <div class="outcome-card-icon icon-lime">⚡</div>
+              <h4>Faster Discovery</h4>
+              <p>
+                Eliminates multi-step keyword typing and playlist sifting. By mapping intuitive mood archetypes to
+                active behavioral context, users reach their ideal audio soundtrack in a fraction of the time.
+              </p>
+            </div>
+
+            <div class="outcome-card">
+              <div class="outcome-card-icon icon-purple">🎯</div>
+              <h4>Personalized Recommendations</h4>
+              <p>
+                Shifts beyond repetitive genre loops. Recommendations dynamically factor in the listener’s time of day,
+                routine, and energy levels while preserving full transparency and user control.
+              </p>
+            </div>
+
+            <div class="outcome-card">
+              <div class="outcome-card-icon icon-sage">🌊</div>
+              <h4>Simpler Music Exploration</h4>
+              <p>
+                Cleans clutter from the primary discovery pathway. The interactive mood selector creates a delightful,
+                low-effort interface that encourages listeners to explore fresh tracks without choice fatigue.
+              </p>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 19: OTHER PROJECT — FREELANCER PORTFOLIO WEBSITE
+         ========================================================================== -->
+    <section class="other-projects-section" id="projects">
+      <div class="container">
+
+        <div class="section-tag-row reveal-on-scroll">
+          <span class="editorial-tag">✦ 03. ADDITIONAL BUILDS</span>
+          <h2 class="editorial-heading">Other Projects</h2>
+        </div>
+
+        <div class="other-project-card reveal-on-scroll delay-1">
+
+          <div class="other-project-content">
+            <span class="other-project-label">WEB DESIGN & CODE</span>
+            <h3 class="other-project-title">Freelancer Portfolio Website</h3>
+
+            <!-- Mandated Tech Stack -->
+            <div class="other-project-tech-tags">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">Responsive Web Design</span>
+            </div>
+
+            <!-- Mandated Description -->
+            <p class="other-project-desc">
+              “A responsive portfolio website concept designed using HTML and CSS.”
+            </p>
+
+            <p class="other-project-details">
+              Features clean semantic markup, custom CSS properties, flexbox/grid responsive layouts, and accessible
+              color contrast. Designed to deliver an intuitive, clean presentation across mobile, tablet, and desktop
+              screens.
+            </p>
+
+            <button class="btn-primary" onclick="openProjectModal('freelance')" id="viewOtherProjectBtn">
+              View Project <span class="btn-arrow">→</span>
+            </button>
+          </div>
+
+          <div class="other-project-visual">
+            <img src="assets/images/freelance_portfolio_mockup.jpg"
+              alt="Freelancer portfolio website mockup on laptop screen with clean responsive layout"
+              class="other-project-thumb" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 20: SKILLS
+         ========================================================================== -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+
+        <div class="section-tag-row reveal-on-scroll">
+          <span class="editorial-tag">✦ 04. CORE COMPETENCIES</span>
+          <h2 class="editorial-heading">Skills & Toolset</h2>
+        </div>
+
+        <div class="skills-editorial-grid reveal-on-scroll delay-1">
+
+          <!-- Category 1: UI/UX -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="cat-icon icon-purple">🧠</span>
+              <div>
+                <h3>UI/UX</h3>
+                <span class="cat-subtitle">Design Thinking & Research</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li><span>✦</span> User Research</li>
+              <li><span>✦</span> Empathy Mapping</li>
+              <li><span>✦</span> User Journey</li>
+              <li><span>✦</span> Personas</li>
+              <li><span>✦</span> Information Architecture</li>
+              <li><span>✦</span> User Flow</li>
+              <li><span>✦</span> Wireframing</li>
+              <li><span>✦</span> Prototyping</li>
+              <li><span>✦</span> Usability Testing</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: UI Design -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="cat-icon icon-lime">🎨</span>
+              <div>
+                <h3>UI Design</h3>
+                <span class="cat-subtitle">Visual Systems & Craft</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li><span>✦</span> Figma (Auto-layout, Components, Variables)</li>
+              <li><span>✦</span> Visual Design</li>
+              <li><span>✦</span> Design Systems & Token Architecture</li>
+              <li><span>✦</span> Responsive Design & Fluid Breakpoints</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Tools -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="cat-icon icon-sage">🛠️</span>
+              <div>
+                <h3>Tools</h3>
+                <span class="cat-subtitle">Creative Software</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li><span>✦</span> Figma</li>
+              <li><span>✦</span> Photoshop</li>
+              <li><span>✦</span> Canva</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Development -->
+          <div class="skill-category-card">
+            <div class="skill-category-header">
+              <span class="cat-icon icon-lavender">&lt;/&gt;</span>
+              <div>
+                <h3>Development</h3>
+                <span class="cat-subtitle">Technical Foundation</span>
+              </div>
+            </div>
+            <ul class="skill-items-list">
+              <li><span>✦</span> HTML5 (Semantic & Accessible)</li>
+              <li><span>✦</span> CSS3 (Grid, Flexbox, Animation)</li>
+              <li><span>✦</span> JavaScript Basics (DOM & Events)</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 17: UX PROCESS (Interactive Timeline)
+         ========================================================================== -->
+    <section class="process-section" id="process">
+      <div class="container">
+
+        <div class="section-tag-row reveal-on-scroll">
+          <span class="editorial-tag">✦ 05. HOW I APPROACH PROBLEMS</span>
+          <h2 class="editorial-heading">UX Process</h2>
+          <p class="section-subtext">
+            A structured, human-centered product design methodology ensuring every decision is grounded in evidence and
+            verified through testing.
+          </p>
+        </div>
+
+        <!-- 9-Step Interactive Process Timeline -->
+        <div class="process-timeline-container reveal-on-scroll delay-1">
+
+          <div class="timeline-track-line"></div>
+
+          <div class="timeline-steps-grid">
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">01</div>
+              <h4>Research</h4>
+              <p>Discover real user pain points through interviews, survey data, and behavioral observation.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">02</div>
+              <h4>Define</h4>
+              <p>Synthesize research into problem statements, personas, and measurable UX goals.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">03</div>
+              <h4>Ideate</h4>
+              <p>Explore wide potential solutions, prioritize features using a 2x2 impact matrix.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">04</div>
+              <h4>Structure</h4>
+              <p>Architect intuitive information architecture and map out frictionless user journeys.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">05</div>
+              <h4>Wireframe</h4>
+              <p>Draft low-fidelity wireframes to establish layout balance and visual hierarchy.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">06</div>
+              <h4>Design</h4>
+              <p>Craft high-fidelity UI systems with typography scales, color tokens, and micro-states.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">07</div>
+              <h4>Prototype</h4>
+              <p>Build interactive, clickable Figma prototypes to bring transitions and flows to life.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">08</div>
+              <h4>Test</h4>
+              <p>Conduct usability evaluations with real users to uncover cognitive friction and bottlenecks.</p>
+            </div>
+
+            <div class="timeline-step-item" onclick="highlightProcessStep(this)">
+              <div class="step-badge">09</div>
+              <h4>Improve</h4>
+              <p>Iterate based on qualitative feedback, refine edge cases, and prepare developer-ready handoffs.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 21: CONTACT
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+
+        <div class="contact-editorial-card reveal-on-scroll">
+
+          <div class="contact-grid-layout">
+
+            <!-- Left Info Column -->
+            <div class="contact-left-col">
+              <span class="editorial-tag">✦ GET IN TOUCH</span>
+
+              <h2 class="contact-main-heading">
+                Let’s create something meaningful<span class="period-dot">.</span>
+              </h2>
+
+              <p class="contact-mandated-text">
+                “I’m open to UI/UX opportunities, internships and product design roles.”
+              </p>
+
+              <!-- Clickable Contact List -->
+              <div class="clickable-contact-list">
+
+                <!-- Email -->
+                <a href="mailto:megalatha@gmail.com" class="contact-action-item" id="contactEmailLink"
+                  title="Send email to megalatha@gmail.com">
+                  <div class="contact-icon-box">✉</div>
+                  <div class="contact-action-meta">
+                    <span class="contact-meta-label">EMAIL ME DIRECTLY</span>
+                    <strong class="contact-meta-value">megalatha@gmail.com</strong>
+                  </div>
+                  <span class="click-chip">Send Mail ↗</span>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:8438953845" class="contact-action-item" id="contactPhoneLink" title="Call 8438953845">
+                  <div class="contact-icon-box">📞</div>
+                  <div class="contact-action-meta">
+                    <span class="contact-meta-label">PHONE / WHATSAPP</span>
+                    <strong class="contact-meta-value">8438953845</strong>
+                  </div>
+                  <span class="click-chip">Call Now ↗</span>
+                </a>
+
+                <!-- Location -->
+                <div class="contact-action-item item-static">
+                  <div class="contact-icon-box">📍</div>
+                  <div class="contact-action-meta">
+                    <span class="contact-meta-label">CURRENT LOCATION</span>
+                    <strong class="contact-meta-value">Chennai, Tamil Nadu, India</strong>
+                  </div>
+                  <span class="location-badge">Open to Relocation</span>
+                </div>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/megalatha-m-a2a2262a8" target="_blank" rel="noopener noreferrer"
+                  class="contact-action-item" id="contactLinkedInLink">
+                  <div class="contact-icon-box icon-linkedin">in</div>
+                  <div class="contact-action-meta">
+                    <span class="contact-meta-label">PROFESSIONAL PROFILE</span>
+                    <strong class="contact-meta-value">linkedin.com/in/megalatha-m-a2a2262a8</strong>
+                  </div>
+                  <span class="click-chip chip-purple">Connect ↗</span>
+                </a>
+
+              </div>
+            </div>
+
+            <!-- Right Quick Message Card -->
+            <div class="contact-right-col">
+              <div class="message-composer-box">
+                <div class="composer-header">
+                  <h4>Quick Message to Megalatha</h4>
+                  <span class="status-indicator">● Active</span>
+                </div>
+
+                <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                  <div class="form-field">
+                    <label for="senderName">Your Name / Organization</label>
+                    <input type="text" id="senderName" placeholder="e.g. Recruiters / Design Team" required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="senderEmail">Your Email</label>
+                    <input type="email" id="senderEmail" placeholder="e.g. recruiter@company.com" required>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="senderSubject">Opportunity Type</label>
+                    <select id="senderSubject" required>
+                      <option value="UI/UX Designer Role">UI/UX Designer Role</option>
+                      <option value="Product Design Internship">Product Design Internship</option>
+                      <option value="Design & Frontend Collaboration">Design & Frontend Collaboration</option>
+                      <option value="Other Inquiry">Other Inquiry</option>
+                    </select>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="senderMessage">Message</label>
+                    <textarea id="senderMessage" rows="4"
+                      placeholder="Hi Megalatha, I reviewed your Spotify AI Mood case study and would like to discuss..."
+                      required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                    Send Message 🚀
+                  </button>
+                </form>
+
+                <div class="direct-mail-note">
+                  Prefers direct email? Click <a href="mailto:megalatha@gmail.com">megalatha@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 23: FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-top-row">
+        <div class="footer-brand-lockup">
+          <div class="footer-brand-title">MEGALATHA ✦</div>
+          <p class="footer-quote">
+            “Good Design · Better Experiences · Together”
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#internship">Internship</a>
+          <a href="#case-study">Spotify Case Study</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+          <a href="#resume" onclick="openResumeModal(event)">Resume</a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-copy">
+          © 2026 Megalatha M • UI/UX Designer • Chennai, Tamil Nadu, India
+        </div>
+
+        <!-- Back to Top Button -->
+        <button class="btn-back-to-top" id="backToTopBtn" onclick="scrollToTop()" aria-label="Back to top of page">
+          Back to Top ↑
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       SECTION 16 & 24: FULL-SCREEN ARTIFACT LIGHTBOX (Prev/Next/Close/Keyboard)
+       ========================================================================== -->
+  <div class="lightbox-overlay" id="artifactLightbox" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Artifact Detail Lightbox">
+
+    <div class="lightbox-controls-bar">
+      <span class="lightbox-counter" id="lightboxCounter">Artifact 1 of 9</span>
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" onclick="closeLightbox()"
+        aria-label="Close lightbox (Esc)">
+        ✕ Close (Esc)
+      </button>
+    </div>
+
+    <!-- Center Stage Image & Navigation Arrows -->
+    <div class="lightbox-main-stage">
+      <button class="lightbox-nav-btn prev-btn" id="lightboxPrevBtn" onclick="changeLightboxArtifact(-1)"
+        aria-label="Previous artifact (Left arrow)">
+        ‹
+      </button>
+
+      <div class="lightbox-image-container">
+        <img src="" alt="" id="lightboxActiveImg" class="lightbox-img">
+      </div>
+
+      <button class="lightbox-nav-btn next-btn" id="lightboxNextBtn" onclick="changeLightboxArtifact(1)"
+        aria-label="Next artifact (Right arrow)">
+        ›
+      </button>
+    </div>
+
+    <!-- Lightbox Caption & Meta Details -->
+    <div class="lightbox-caption-panel">
+      <div class="caption-tag-pill" id="lightboxTag">INTERNSHIP ARTIFACT</div>
+      <h3 class="caption-title" id="lightboxTitle">Artifact Title</h3>
+      <p class="caption-description" id="lightboxDesc">Artifact Description</p>
+    </div>
+
+  </div>
+
+  <!-- ==========================================================================
+       SECTION 22: RESUME MODAL (View Resume + Download Resume)
+       ========================================================================== -->
+  <div class="resume-modal-overlay" id="resumeModal" aria-hidden="true" role="dialog" aria-modal="true"
+    aria-label="Megalatha Resume Viewer">
+    <div class="resume-modal-box">
+
+      <div class="resume-modal-top">
+        <div class="resume-modal-badge">CURRICULUM VITAE</div>
+        <div class="resume-modal-actions">
+          <button class="btn-print-resume" onclick="window.print()">
+            🖨️ Print / Save as PDF
+          </button>
+          <button class="resume-modal-close" onclick="closeResumeModal()" aria-label="Close resume viewer">
+            ✕
+          </button>
+        </div>
+      </div>
+
+      <!-- Clean Printable Resume Sheet -->
+      <div class="resume-paper" id="resumePrintArea">
+
+        <!-- Resume Header -->
+        <div class="r-header">
+          <div>
+            <h1 class="r-name">MEGALATHA M</h1>
+            <div class="r-role">UI/UX DESIGNER</div>
+            <div class="r-sub">B.Voc Software Development Background</div>
+          </div>
+          <div class="r-contact-box">
+            <div>📍 Chennai, Tamil Nadu, India</div>
+            <div>✉ megalatha@gmail.com</div>
+            <div>📞 8438953845</div>
+            <div>💼 linkedin.com/in/megalatha</div>
+          </div>
+        </div>
+
+        <div class="r-rule"></div>
+
+        <!-- Summary -->
+        <div class="r-section">
+          <h2 class="r-sec-title">PROFESSIONAL SUMMARY</h2>
+          <p class="r-summary-text">
+            “I’m Megalatha, an aspiring UI/UX Designer with a Software Development background. I enjoy turning user
+            problems into simple, thoughtful digital experiences through research, wireframing and visual design.”
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="r-section">
+          <h2 class="r-sec-title">EDUCATION</h2>
+          <div class="r-entry">
+            <div class="r-entry-head">
+              <strong>Bachelor of Vocation (B.Voc) in Software Development</strong>
+              <span>Arumugam Pillai Seethai Ammal College, Tamil Nadu</span>
+            </div>
+            <p class="r-entry-desc">
+              Curriculum focused on software engineering foundations, user interface design, web architecture, and
+              database logic.
+            </p>
+          </div>
+        </div>
+
+        <!-- Internship Experience -->
+        <div class="r-section">
+          <h2 class="r-sec-title">INTERNSHIP EXPERIENCE</h2>
+          <div class="r-entry">
+            <div class="r-entry-head">
+              <strong>Full Stack Developer Intern</strong>
+              <span>Dec 2025 – Mar 2026</span>
+            </div>
+            <div class="r-entry-sub">Abservetech Pvt. Ltd., Madurai</div>
+            <ul class="r-bullet-list">
+              <li>Collaborated with a team to deliver assigned modules within deadlines.</li>
+              <li>Handled tasks independently with consistent attention to detail and accuracy.</li>
+              <li>Demonstrated strong problem-solving and time-management skills throughout the internship.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="r-section">
+          <h2 class="r-sec-title">FEATURED UI/UX & WEB PROJECTS</h2>
+
+          <div class="r-entry">
+            <div class="r-entry-head">
+              <strong>Spotify AI Mood Recommendation (UI/UX Case Study)</strong>
+              <span>Figma · Photoshop · Canva</span>
+            </div>
+            <p class="r-entry-desc">
+              An AI-powered music discovery concept designed to reduce the time and effort users spend searching for
+              music that matches their current mood. Predicts suitable listening moods using listening patterns,
+              activity and behavioural context, recommending matching audio streams across 12 comprehensive UX stages.
+            </p>
+          </div>
+
+          <div class="r-entry" style="margin-top: 10px;">
+            <div class="r-entry-head">
+              <strong>Freelancer Portfolio Website</strong>
+              <span>HTML · CSS · Responsive Web Design</span>
+            </div>
+            <p class="r-entry-desc">
+              A responsive portfolio website concept designed using clean semantic HTML and modern CSS flex/grid
+              architecture.
+            </p>
+          </div>
+        </div>
+
+        <!-- Skills & Tools -->
+        <div class="r-section">
+          <h2 class="r-sec-title">TECHNICAL & DESIGN SKILLS</h2>
+          <div class="r-skills-grid">
+            <div>
+              <strong>UI/UX:</strong> User Research, Empathy Mapping, User Journey, Personas, Information Architecture,
+              User Flow, Wireframing, Prototyping, Usability Testing
+            </div>
+            <div style="margin-top: 6px;">
+              <strong>UI Design & Tools:</strong> Figma, Visual Design, Design Systems, Responsive Design, Photoshop,
+              Canva
+            </div>
+            <div style="margin-top: 6px;">
+              <strong>Development:</strong> HTML5, CSS3, JavaScript Basics
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="resume-modal-footer">
+        <button class="btn-primary" onclick="window.print()">Download / Print Resume 📄</button>
+        <button class="btn-secondary" onclick="closeResumeModal()">Close ✕</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <span class="toast-msg" id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- JavaScript Interaction Engine -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
